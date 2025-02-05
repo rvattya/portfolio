@@ -18,7 +18,7 @@ const Aboutme = () => {
         <div className="pl-5 flex flex-col items-center text-center md:text-left">
           <h2 className="text-4xl font-bold mb-6 text-white">
             Hello! I'm a
-            <span className="text-blue-400">
+            <span className="text-yellow-400">
               <Typewriter
                 options={{
                   strings: ["Website Developer", "Digital Marketer", "Freelancer"],
