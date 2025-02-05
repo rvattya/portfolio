@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Carousel from "better-react-carousel";
 
 const Testimonial = () => {
   const testimonials = [
@@ -7,20 +8,20 @@ const Testimonial = () => {
       role: "CEO, Tech Innovators",
       feedback:
         "Working with this team was a game-changer for our business. Their expertise in digital marketing helped us achieve amazing results in a short time!",
-      image: "https://via.placeholder.com/100", // Replace with actual image URL
+      image: "https://via.placeholder.com/100",
     },
     {
       name: "Sarah Smith",
       role: "Founder, Green Solutions",
       feedback:
-        "Their attention to detail and commitment to delivering top-quality work exceeded our expectations. Highly recommend their services!",
+        "Their attention to detail and commitment to delivering top-quality work exceeded our expectations. Highly recommend their services provide best solution!",
       image: "https://via.placeholder.com/100",
     },
     {
       name: "Michael Brown",
       role: "Manager, Real Estate Co.",
       feedback:
-        "The web application they built for us transformed the way we manage our clients. The user-friendly interface is exactly what we needed!",
+        "The web application they built for us transformed the way we manage our clients. The user-friendly interface is exactly what we needed good in understand market! ",
       image: "https://via.placeholder.com/100",
     },
     {
@@ -38,35 +39,34 @@ const Testimonial = () => {
       image: "https://via.placeholder.com/100",
     },
   ];
-  return (
-   <>
-    
-   <section id='testimonial' className='py-10 px-6 md:px-20'>
-   <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">Testimonials</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center border hover:shadow-xl transition"
-            >
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-20 h-20 rounded-full mb-4"
-              />
-              <h3 className="text-lg font-semibold text-gray-700">
-                {testimonial.name}
-              </h3>
-              <p className="text-sm text-gray-500">{testimonial.role}</p>
-              <p className="text-gray-600 mt-4 text-center">{testimonial.feedback}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-   </section>
-   </>
-  )
-}
 
-export default Testimonial
+  return (
+    <section id="testimonial" className=" bg-gradient-to-b from-[#6665E7] via-cyan-500 to-blue-800 py-10 px-6 ">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-yellow-500 mb-8">Testimonials</h2>
+        <Carousel cols={3} rows={1} gap={10} loop>
+          {testimonials.map((testimonial, index) => (
+            <Carousel.Item key={index}>
+              <div className="bg-gradient-to-b from-purple-700 via-cyan-400 to-blue-800 text-white shadow-lg rounded-lg p-6 flex flex-col items-center border hover:shadow-xl transition">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-20 h-20 rounded-full mb-4"
+                />
+                <h3 className="text-lg font-bold text-white ">
+                  {testimonial.name}
+                </h3>
+                <p className="text-sm text-white">{testimonial.role}</p>
+                <p className="text-white mt-4 text-center">
+                  {testimonial.feedback}
+                </p>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonial;

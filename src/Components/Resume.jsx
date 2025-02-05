@@ -12,16 +12,22 @@ const Resume = () => {
   };
   return (
     <>
-    <section id='resume' className='py-10 px-6 md:px-20'>
+    <section id='resume' className='py-10 px-6 md:px-20 bg-gradient-to-b from-blue-800 via-cyan-500 to-[#6665E7]'>
     <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">Resume</h2>
-        <p className="text-lg text-gray-600 mb-6">
-          Take a look at my professional experience, skills, and achievements by downloading my resume.
+        <h2 className="text-4xl font-bold text-yellow-500 mb-8">Resume</h2>
+        <p className="text-lg text-white font-bold mb-6">
+        Explore my journey, skills, and accomplishments by downloading my resume.  
+        Get an insight into my expertise in web development, digital marketing, and project execution.
         </p>
         <div className="flex justify-center">
           <button
             onClick={handleDownload}
-            className="flex items-center justify-center bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="flex items-center justify-center relative px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-600 
+             rounded-lg shadow-lg transition-all duration-300 ease-in-out 
+             hover:scale-105 hover:shadow-[0px_0px_20px_rgba(99,102,241,0.8)] 
+             active:scale-95 active:shadow-none 
+             before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400 before:to-purple-500 before:opacity-0 
+             before:transition-opacity before:duration-500 hover:before:opacity-100"
           >
             <FaDownload className="mr-2" /> Download Resume
           </button>

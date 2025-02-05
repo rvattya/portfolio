@@ -12,7 +12,7 @@ const Header = ({ onMenuClick }) => {
   };
 
   return (
-    <div className="bg-[#1d1d50] text-white p-4 w-full">
+    <div className="bg-gradient-to-r from-blue-900  to-[#6665E7] text-white p-4 w-full">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-8">
         {/* Logo / Menu Toggle */}
         <div className="text-2xl font-bold cursor-pointer md:hidden" onClick={onMenuClick}>

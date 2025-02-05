@@ -17,7 +17,7 @@ setFullrofile(false)
   return (
     <>
       {/* Sidebar */}
-      <div className="w-72 bg-[#1a1a40] p-6 flex flex-col items-center text-white h-full">
+      <div className="w-72 bg-gradient-to-b from-blue-950 via-cyan-500 to-[#060648] p-6 flex flex-col items-center text-white h-full">
         {/* Profile Section */}
         <div className="text-center">
           <div className="rounded-full border-4 border-yellow-400 w-40 h-40 overflow-hidden mx-auto cursor-pointer"  onClick={openprofile}>
