@@ -4,41 +4,32 @@ import Carousel from "better-react-carousel";
 const Testimonial = () => {
   const testimonials = [
     {
-      name: "John Doe",
-      role: "CEO, Tech Innovators",
-      feedback:
-        "Working with this team was a game-changer for our business. Their expertise in digital marketing helped us achieve amazing results in a short time!",
-      image: "https://via.placeholder.com/100",
+        "name": "Raj Arif Patel",
+        "role": "Founder, Raj Infra",
+        "feedback": "Their expertise in real estate marketing and branding has significantly increased our project visibility. The strategic campaigns and digital presence they created helped us attract more investors and buyers effortlessly."
     },
     {
-      name: "Sarah Smith",
-      role: "Founder, Green Solutions",
-      feedback:
-        "Their attention to detail and commitment to delivering top-quality work exceeded our expectations. Highly recommend their services provide best solution!",
-      image: "https://via.placeholder.com/100",
+        "name": "Dhirenra Choudhery",
+        "role": "Founder, Stechnotech",
+        "feedback": "From web development to digital marketing, their comprehensive solutions have been invaluable for our agency’s growth.exilent knowladge Their technical expertise and creative approach set them apart in the industry."
     },
     {
-      name: "Michael Brown",
-      role: "Manager, Real Estate Co.",
-      feedback:
-        "The web application they built for us transformed the way we manage our clients. The user-friendly interface is exactly what we needed good in understand market! ",
-      image: "https://via.placeholder.com/100",
+        "name": "Vardhman Jain",
+        "role": "Founder, CKM Learning",
+        "feedback": "They played a key role in bringing our e-learning platform to life with an intuitive and scalable web solution. Their understanding of the education sector helped us provide a seamless learning experience to our students."
     },
     {
-      name: "Emma Wilson",
-      role: "Owner, Fashion World",
-      feedback:
-        "Our e-commerce website turned out fantastic, thanks to their creativity and technical skills. It has boosted our online sales significantly!",
-      image: "https://via.placeholder.com/100",
+        "name": "Rajesh Dangi",
+        "role": "Owner, D2R Construction",
+        "feedback": "Their ability to create a strong online presence for our construction business has helped us gain more credibility and reach potential clients effortlessly. Their web solutions truly reflect the professionalism of our work."
     },
     {
-      name: "David Johnson",
-      role: "Marketing Head, Bright Ideas",
-      feedback:
-        "Their digital marketing strategies are unparalleled. Our campaigns have seen a massive increase in engagement and conversions!",
-      image: "https://via.placeholder.com/100",
-    },
-  ];
+        "name": "Nand Kishore Sahu",
+        "role": "Owner, Sahu Transport",
+        "feedback": "Their digital marketing strategies have transformed our logistics business by expanding our reach and streamlining client interactions. The results-driven approach has helped us grow consistently."
+    }
+]
+
 
   return (
     <section id="testimonial" className=" bg-gradient-to-b from-[#6665E7] via-cyan-500 to-blue-800 py-10 px-6 ">
@@ -48,11 +39,7 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <Carousel.Item key={index}>
               <div className="bg-gradient-to-b from-purple-700 via-cyan-400 to-blue-800 text-white shadow-lg rounded-lg p-6 flex flex-col items-center border hover:shadow-xl transition">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-20 h-20 rounded-full mb-4"
-                />
+                
                 <h3 className="text-lg font-bold text-white ">
                   {testimonial.name}
                 </h3>
