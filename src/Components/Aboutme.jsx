@@ -1,7 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import image from '../assets/image.png'
-import bgimage from '../assets/bgimage.jpg'
 
 
 const Aboutme = () => {
